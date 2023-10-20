@@ -122,7 +122,7 @@ $(function () {
                 },
                 aboutus: {
                     title: 'About us',
-                    description: 'Since 2010 of experience in solar and renewable energy.',
+                    description: 'Since 2010  experience in solar and renewable energy.',
                     claim: 'We have been successfully operating in the German market since 2010 and are expanding into the Italian and Spanish markets.',
                     bullet1: 'Come visit us in our showroom.',
                     bullet2: 'Multilingual backoffice.',
