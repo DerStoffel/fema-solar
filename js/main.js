@@ -116,7 +116,7 @@ $(document).ready(function () {
         url: "https://formsubmit.co/ajax/info@fema-solar.net",
         method: "POST",
         data: formData,
-        dataType: "json",
+        dataType: "jsonp",
         success: (data) => console.log(data),
         error: (err) => console.log(err)
       }).done(function (data) {
