@@ -323,6 +323,10 @@
     </div> -->
     <!-- Testimonial End -->
 
+
+    
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
     <!-- Quote Start -->
     <div id="contact" class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
         <div class="container quote px-lg-0">
@@ -340,37 +344,42 @@
                         <h6 class="text-secondary" data-i18n="contact.subtitle">Unverbindlich anfragen</h6>
                         <h1 class="mb-4" data-i18n="contact.ask">Solar Projekt jetzt starten.</h1>
                         <p class="mb-4 pb-2" data-i18n="contact.claim">Sie haben Fragen zu einer Installation, unseren Produkten oder Distribution? Zögern Sie nicht mit uns in Kontakt zu treten und von uns zu hören.</p>
-                        <form id="contact-form">
+                        <form method="POST" id="contact-form">
+                            <input type="hidden" name="access_key" value="c5adb4e2-0a32-4438-a74b-a249dd90db01">
+                            <input type="hidden" name="from_name" value="fema-solar.net">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input id="name" type="text" class="form-control border-0" placeholder="Vor- und Nachname" style="height: 55px;" data-i18n="[placeholder]contact.form.name" required>
+                                    <input id="name" type="text" name="name" class="form-control border-0" placeholder="Vor- und Nachname" style="height: 55px;" data-i18n="[placeholder]contact.form.name" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <input id="email" type="email" class="form-control border-0" placeholder="E-Mail Adresse" style="height: 55px;" data-i18n="[placeholder]contact.form.email" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input id="mobile" type="text" class="form-control border-0" placeholder="Handynummer" style="height: 55px;" data-i18n="[placeholder]contact.form.mobile">
+                                    <input id="mobile" type="text" name="phone" class="form-control border-0" placeholder="Handynummer" style="height: 55px;" data-i18n="[placeholder]contact.form.mobile">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <select id="subject" class="form-select border-0" style="height: 55px;" required>
+                                    <select id="subject" name="subject" class="form-select border-0" style="height: 55px;" required>
                                         <option selected data-i18n="contact.form.subject.title"></option>>Betreff</option>
-                                        <option value="1" data-i18n="contact.form.subject.installation">Installation</option>
-                                        <option value="2" data-i18n="contact.form.subject.products">Produkte</option>
-                                        <option value="3" data-i18n="contact.form.subject.consultation">Beratung</option>
-                                        <option value="4" data-i18n="contact.form.subject.distribution">Distribution</option>
+                                        <option value="Installation" data-i18n="contact.form.subject.installation">Installation</option>
+                                        <option value="Produkte" data-i18n="contact.form.subject.products">Produkte</option>
+                                        <option value="Beratung" data-i18n="contact.form.subject.consultation">Beratung</option>
+                                        <option value="Distribution" data-i18n="contact.form.subject.distribution">Distribution</option>
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <textarea id="message" class="form-control border-0" placeholder="Ihre Nachricht" data-i18n="[placeholder]contact.form.message" required></textarea>
+                                    <textarea id="message" name="message" class="form-control border-0" placeholder="Ihre Nachricht" data-i18n="[placeholder]contact.form.message" required></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <input id="consent" type="checkbox" required> Ich stimme der Weiterverarbeitung meiner Daten durch formsubmit.io und deren Datenschutz zu.</input>
+                                    <input id="consent" type="checkbox" required> Ich stimme der Weiterverarbeitung meiner Daten durch <a href="https://web3forms.com/">web3forms.com</a> und deren Datenschutz zu.</input>
+                                </div>
+                                <div class="col-12">
+                                    <div class="h-captcha" data-captcha="true"></div>
+                                </div>
+                                <div class="col-12">
                                     <button id="mail-button" class="btn btn-secondary rounded-pill py-3 px-5" type="submit" data-i18n="contact.form.submit">Absenden</button>
-                                    <div id="mail-spinner" class="spinner-border" role="status">
-                                        <span class="sr-only">Loading...</span>
-                                    </div>
                                 </div>
                             </div>
+                            <div id="result"></div>
                         </form>
                     </div>
                 </div>
@@ -414,6 +423,7 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
+    <script src="lib/web3forms/client.js" async defer></script>
     <script src="lib/jquery/jquery-3.4.1.min.js"></script>
     <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="lib/i18next/i18next.min.js"></script>

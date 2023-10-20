@@ -97,63 +97,51 @@
 })(jQuery);
 
 
-$(document).ready(function () {
-    $('#mail-spinner').hide();
-    $("form#contact-form").submit(function (event) {
+const form = document.getElementById('contact-form');
+const result = document.getElementById('result');
 
-      $('#mail-spinner').show();
-      $('#mail-button').hide();
-      var formData = {
-        name: $("#name").val(),
-        email: $("#email").val(),
-        subject: $("#subject").val(),
-        mobile: $("#mobile").val(),
-        message: $("#message").val(),
-        constent: $("#constent").val(),
-      };
-  
-      $.ajax({
-        url: "https://formsubmit.co/ajax/info@fema-solar.net",
-        method: "POST",
-        data: formData,
-        dataType: "jsonp",
-        success: (data) => console.log(data),
-        error: (err) => console.log(err)
-      }).done(function (data) {
-        console.log(data);
-        $('#mail-spinner').hide();
-        $('#mail-button').show();
-  
-        if (!data.success) {
-          if (data.errors.name) {
-            $("#name-group").addClass("has-error");
-            $("#name-group").append(
-              '<div class="help-block">' + data.errors.name + "</div>"
-            );
-          }
-  
-          if (data.errors.email) {
-            $("#email-group").addClass("has-error");
-            $("#email-group").append(
-              '<div class="help-block">' + data.errors.email + "</div>"
-            );
-          }
-  
-          if (data.errors.superheroAlias) {
-            $("#superhero-group").addClass("has-error");
-            $("#superhero-group").append(
-              '<div class="help-block">' + data.errors.superheroAlias + "</div>"
-            );
-          }
-        } else {
-          $("form").html(
-            '<div class="alert alert-success">' + data.message + "</div>"
-          );
-        }
-  
-      });
-  
-      event.preventDefault();
-    });
-  });
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
 
+  const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+  if (!hCaptcha) {
+      e.preventDefault();
+      alert("Please fill out captcha field")
+      return
+  }
+
+  const formData = new FormData(form);
+  const object = Object.fromEntries(formData);
+
+  const json = JSON.stringify(object);
+  result.innerHTML = "Please wait..."
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = json.message;
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+        })
+        .then(function() {
+            form.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 3000);
+        });
+});
