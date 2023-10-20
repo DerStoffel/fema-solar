@@ -34,9 +34,9 @@ $(function () {
                     title: 'Über uns',
                     description: 'Seit 2010 Erfahrung in Solar- und Erneuerbarer-Energie.',
                     claim: 'Wir sind seit 2010 erfolgreich auf dem deutschen Markt tätig und expandieren auf den italienischen und spanischen Markt.',
-                    bullet1: 'Besuchen Sie uns in unserem Showroom.',
-                    bullet2: 'Mehrsprachiges Backoffice.',
-                    bullet3: 'Produkte mit Fokus auf Autarkie.'
+                    bullet1: 'Besuchen Sie uns bald in unserem Showroom.',
+                    bullet2: 'Mehrsprachiger Support.',
+                    bullet3: 'Produkte mit Fokus auf hohen Autarkiegrad.'
                 },
                 projects: {
                     title: 'Projekte',
@@ -46,8 +46,8 @@ $(function () {
                 whyus: {
                     title: 'Warum wir',
                     subtitle: 'Warum wir?',
-                    ask: 'Ganzheitliche Solar-Systeme mit Fokus auf Autarkie',
-                    claim: 'Wir sind der festen Überzeugung, dass unsere autarke Systeme auf dem Markt der erneuerbaren Energien ihr größter Vorteil sein werden.',
+                    ask: 'Ganzheitliche Solar-Systeme mit Fokus auf hohe Autarkie',
+                    claim: 'Wir sind der festen Überzeugung, dass unsere autarken Systeme auf dem Markt der erneuerbaren Energien ihr größter Vorteil sein werden.',
                     bullet1: {
                         attribute: 'Qualitative',
                         noun: 'Produkte',
@@ -69,7 +69,7 @@ $(function () {
                     title: 'Kontakt',
                     quote: 'Angebot anfragen',
                     doit: 'Kontaktieren',
-                    subtitle: 'Unverbindlich anfragem',
+                    subtitle: 'Unverbindlich anfragen',
                     ask: 'Solar Projekt jetzt starten',
                     claim: 'Sie haben Fragen zu einer Installation, unseren Produkten oder Distribution? Zögern Sie nicht mit uns in Kontakt zu treten und von uns zu hören.',
                     form: {
@@ -90,7 +90,7 @@ $(function () {
                 values: {
                     efficiency: {
                         title: 'Effizient',
-                        description: 'Unsere Produkte zeichnen immer wieder aufs Neue durch hohe Effizienz aus.'
+                        description: 'Unsere Produkte zeichnen sich immer wieder aufs Neue durch hohe Effizienz aus.'
                     },
                     quality: {
                         title: 'Qualitativ',
