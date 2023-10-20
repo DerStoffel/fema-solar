@@ -41,7 +41,6 @@
     </div>
     <!-- Spinner End -->
 
-
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark p-0">
         <div class="row gx-0 d-none d-lg-flex">
@@ -64,7 +63,6 @@
         </div>
     </div>
     <!-- Topbar End -->
-
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
@@ -90,11 +88,10 @@
     </nav>
     <!-- Navbar End -->
 
-
     <!-- Carousel Start -->
     <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-1.jpg'>">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-1.jpeg'>">
                 <img class="img-fluid" src="img/carousel-1.jpeg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
@@ -110,7 +107,6 @@
         </div>
     </div>
     <!-- Carousel End -->
-
 
     <!-- Feature Start -->
     <div class="container-xxl py-5">
@@ -349,19 +345,19 @@
                         <h6 class="text-secondary" data-i18n="contact.subtitle">Unverbindlich anfragen</h6>
                         <h1 class="mb-4" data-i18n="contact.ask">Solar Projekt jetzt starten.</h1>
                         <p class="mb-4 pb-2" data-i18n="contact.claim">Sie haben Fragen zu einer Installation, unseren Produkten oder Distribution? Zögern Sie nicht mit uns in Kontakt zu treten und von uns zu hören.</p>
-                        <form>
+                        <form id="contact-form">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Vor- und Nachname" style="height: 55px;" data-i18n="[placeholder]contact.form.name">
+                                    <input id="name" type="text" class="form-control border-0" placeholder="Vor- und Nachname" style="height: 55px;" data-i18n="[placeholder]contact.form.name" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="E-Mail Adresse" style="height: 55px;" data-i18n="[placeholder]contact.form.email">
+                                    <input id="email" type="email" class="form-control border-0" placeholder="E-Mail Adresse" style="height: 55px;" data-i18n="[placeholder]contact.form.email" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Handynummer" style="height: 55px;" data-i18n="[placeholder]contact.form.mobile">
+                                    <input id="mobile" type="text" class="form-control border-0" placeholder="Handynummer" style="height: 55px;" data-i18n="[placeholder]contact.form.mobile">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
+                                    <select id="subject" class="form-select border-0" style="height: 55px;" required>
                                         <option selected data-i18n="contact.form.subject.title"></option>>Betreff</option>
                                         <option value="1" data-i18n="contact.form.subject.installation">Installation</option>
                                         <option value="2" data-i18n="contact.form.subject.products">Produkte</option>
@@ -370,10 +366,13 @@
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Ihre Nachricht" data-i18n="[placeholder]contact.form.message"></textarea>
+                                    <textarea id="message" class="form-control border-0" placeholder="Ihre Nachricht" data-i18n="[placeholder]contact.form.message" required></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-secondary rounded-pill py-3 px-5" type="submit" data-i18n="contact.form.submit">Absenden</button>
+                                    <button id="mail-button" class="btn btn-secondary rounded-pill py-3 px-5" type="submit" data-i18n="contact.form.submit">Absenden</button>
+                                    <div id="mail-spinner" class="spinner-border" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
                                 </div>
                             </div>
                         </form>
@@ -415,10 +414,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
