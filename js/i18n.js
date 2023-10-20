@@ -32,8 +32,8 @@ $(function () {
                 },
                 aboutus: {
                     title: 'Über uns',
-                    description: '11+ Jahre Erfahrung in Solar- und Erneuerbarer-Energie.',
-                    claim: 'Wir sind seit über 11 Jahren erfolgreich auf dem deutschen Markt tätig und expandieren auf den italienischen und spanischen Markt.',
+                    description: 'Seit 2010 Erfahrung in Solar- und Erneuerbarer-Energie.',
+                    claim: 'Wir sind seit 2010 erfolgreich auf dem deutschen Markt tätig und expandieren auf den italienischen und spanischen Markt.',
                     bullet1: 'Besuchen Sie uns in unserem Showroom.',
                     bullet2: 'Mehrsprachiges Backoffice.',
                     bullet3: 'Produkte mit Fokus auf Autarkie.'
@@ -122,8 +122,8 @@ $(function () {
                 },
                 aboutus: {
                     title: 'About us',
-                    description: '11+ years of experience in solar and renewable energy.',
-                    claim: 'We have been successfully operating in the German market for over 11 years and are expanding into the Italian and Spanish markets.',
+                    description: 'Since 2010 of experience in solar and renewable energy.',
+                    claim: 'We have been successfully operating in the German market since 2010 and are expanding into the Italian and Spanish markets.',
                     bullet1: 'Come visit us in our showroom.',
                     bullet2: 'Multilingual backoffice.',
                     bullet3: 'Products with focus on self-sufficiency.'
@@ -212,8 +212,8 @@ $(function () {
                 },
                 aboutus: {
                     title: 'Chi siamo',
-                    description: 'Oltre 11 anni di esperienza nel settore dell\'energia solare e rinnovabile.',
-                    claim: 'Abbiamo avuto successo nel mercato tedesco per oltre 11 anni e ci stiamo espandendo nei mercati italiano e spagnolo.',
+                    description: 'Esperienza nel settore dell\'energia solare e rinnovabile dal 2010.',
+                    claim: 'Dal 2010 abbiamo avuto successo sul mercato tedesco e ci stiamo espandendo sui mercati italiano e spagnolo.',
                     bullet1: 'Visitateci nel nostro showroom.',
                     bullet2: 'Back office multilingue.',
                     bullet3: 'Prodotti incentrati sull\'autosufficienza.'
@@ -302,8 +302,8 @@ $(function () {
                 },
                 aboutus: {
                     title: 'Sobre nosotros',
-                    description: 'Más de 11 años de experiencia en energía solar y renovable.',
-                    claim: 'Llevamos más de 11 años triunfando en el mercado alemán y nos estamos expandiendo a los mercados italiano y español.',
+                    description: 'Experiencia en energía solar y renovable desde 2010.',
+                    claim: 'Tenemos éxito en el mercado alemán desde 2010 y nos estamos expandiendo a los mercados italiano y español.',
                     bullet1: 'Visítenos en nuestra sala de exposición.',
                     bullet2: 'Back office multilingüe.',
                     bullet3: 'Productos centrados en la autosuficiencia.'
