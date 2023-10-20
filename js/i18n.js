@@ -84,6 +84,7 @@ $(function () {
                             consultation: 'Beratung'
                         },
                         message: 'Ihre Nachricht',
+                        consent: 'Ich stimme der Weiterverarbeitung meiner Daten durch web3forms.com und deren Datenschutz zu.',
                         submit: 'Absenden'
                     }
                 },
@@ -174,6 +175,7 @@ $(function () {
                             consultation: 'Consultation'
                         },
                         message: 'Your message',
+                        consent: 'I agree to the further processing of my data by web3forms.com and its data protection.',
                         submit: 'Send'
                     }
                 },
@@ -264,6 +266,7 @@ $(function () {
                             consultation: 'Consultazione'
                         },
                         message: 'Messaggio',
+                        consent: 'Acconsento al trattamento dei miei dati da parte di web3forms.com e alla loro protezione.',
                         submit: 'Invia'
                     }
                 },
@@ -354,6 +357,7 @@ $(function () {
                             consultation: 'Consulta'
                         },
                         message: 'Su mensaje',
+                        consent: 'Acepto el tratamiento posterior de mis datos por parte de web3forms.com y su protección de datos.',
                         submit: 'Enviar'
                     }
                 },
