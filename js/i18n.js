@@ -110,7 +110,7 @@ $(function () {
                     quickaccess: 'Schnellzugriff'
                 },
                 imprint: {
-                    title: 'Impressum'
+                    title: 'Impressum & Datenschutz'
                 }
             }
           },
@@ -200,7 +200,7 @@ $(function () {
                     quickaccess: 'Quick Access'
                 },
                 imprint: {
-                    title: 'Legal & Imprint'
+                    title: 'Legal, Imprint & Privacy Policy'
                 }
             }
           },

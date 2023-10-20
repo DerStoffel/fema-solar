@@ -100,6 +100,7 @@
 $(document).ready(function () {
     $('#mail-spinner').hide();
     $("form#contact-form").submit(function (event) {
+
       $('#mail-spinner').show();
       $('#mail-button').hide();
       var formData = {
@@ -108,6 +109,7 @@ $(document).ready(function () {
         subject: $("#subject").val(),
         mobile: $("#mobile").val(),
         message: $("#message").val(),
+        constent: $("#constent").val(),
       };
   
       $.ajax({
